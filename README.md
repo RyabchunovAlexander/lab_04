@@ -30,7 +30,7 @@ pip install pytest
 python -m algopack.main
 
 # Запуск автоматических тестов
-pytest -v
+python -m pytest
 
 # Проверка качества и стиля кода
 ruff check .
@@ -167,7 +167,7 @@ print(queue.pop())
 
 ## Технологии
 
-- Python
+- Python 3.10+
 - **ruff** — статический анализ и проверка качества Python-кода.
 - **pytest** — автоматическое тестирование.
 - **random** — генерация тестовых данных.

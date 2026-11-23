@@ -5,8 +5,7 @@ from algopack.errors import ArgTypeError, ArgValueError
 
 def generate_random(n, seed=None, low_bound=-1000, high_bound=1000):
     """Создаёт список случайных целых чисел."""
-    if (type(n) is not int or type(low_bound) is not int
-            or type(high_bound) is not int):
+    if (type(n) is not int or type(low_bound) is not int or type(high_bound) is not int):
         raise ArgTypeError("Размер и границы должны быть целыми числами")
 
     if seed is not None and type(seed) is not int:
@@ -59,8 +58,7 @@ def generate_almost_sorted(n, seed=None, low_bound=-1000, high_bound=1000):
 def generate_with_duplicates(n, seed=None, low_bound=-1000,
                              high_bound=1000, unique_count=5):
     """Создаёт список с большим количеством повторений."""
-    if (type(n) is not int or type(low_bound) is not int
-            or type(high_bound) is not int
+    if (type(n) is not int or type(low_bound) is not int or type(high_bound) is not int
             or type(unique_count) is not int):
         raise ArgTypeError("Аргументы должны быть целыми числами")
 
